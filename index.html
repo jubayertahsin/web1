@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jubayer Tahsin — Systems, Security & AI</title>
+  <meta name="description" content="Portfolio of Jubayer Tahsin — Computer Science student building systems in software, AI, networking, and cybersecurity.">
+  <meta property="og:title" content="Jubayer Tahsin — Systems, Security & AI">
+  <meta property="og:description" content="Computer Science student building real systems: software, AI, security.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="nav glass" id="nav">
+    <a class="brand" href="#top">
+      <span class="brand-glyph">◆</span> jubayer<span class="brand-dim">.dev</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#proof">Proof of Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-sm btn-primary magnetic" href="#contact">Ping me</a>
+  </nav>
+
+  <!-- ============ HERO + TERMINAL ============ -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="status-tag reveal">
+        <span class="pulse-dot"></span> Available for high-impact projects
+      </div>
+
+      <h1 class="headline reveal delay-1">
+        I don't follow tutorials.<br>
+        I <span class="grad-text">break</span>, <span class="grad-text-alt">build</span> &amp; secure
+        <span class="type-wrap"><span id="typedText" data-words='["systems.","networks.","AI agents.","the future."]' data-cursor="_"></span></span>
+      </h1>
+
+      <p class="hero-sub reveal delay-2">
+        CS student on a mission toward cybersecurity research — building software, exploring AI,
+        and learning how systems fail before they do.
+      </p>
+
+      <div class="hero-actions reveal delay-3">
+        <a class="btn btn-primary magnetic" href="#work">
+          Explore the work
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost magnetic" href="#contact">Start a project</a>
+      </div>
+    </div>
+
+    <!-- Terminal widget -->
+    <aside class="terminal reveal delay-3" aria-label="About me terminal">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">jubayer@portfolio ~ %</span>
+      </div>
+      <div class="term-body mono" id="termBody">
+        <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+        <p class="t-out">jubayer_tahsin --role="cs_student, builder"</p>
+        <p><span class="t-prompt">$</span> <span class="t-cmd">cat mission.txt</span></p>
+        <p class="t-out">Learn how things break. Then make them unbreakable.</p>
+        <p><span class="t-prompt">$</span> <span class="t-cmd">run ./passion.sh --target security+AI</span></p>
+        <p class="t-out ok">[ok] compiling curiosity… <span class="cursor-blink">▊</span></p>
+      </div>
+    </aside>
+
+    <a class="scroll-hint reveal delay-4" href="#work" aria-label="Scroll to work">
+      <span class="mono">scroll</span><span class="hint-line"></span>
+    </a>
+  </header>
+
+  <!-- ============ GITHUB TIMELINE ============ -->
+  <section class="section" id="activity">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-label mono">// activity</span>
+        <h2 class="sec-title">Contribution <em>Timeline</em></h2>
+      </div>
+
+      <div class="gh-card glass reveal">
+        <div class="gh-head">
+          <div class="gh-user">
+            <span class="gh-avatar">@jubayertahsin</span>
+            <span class="gh-meta mono">142 commits · last 12 weeks</span>
+          </div>
+          <span class="gh-badge mono">less ▪▪▪▪ more</span>
+        </div>
+        <div class="gh-graph" id="ghGraph" role="img" aria-label="Mock GitHub contribution graph"></div>
+        <div class="gh-legend mono">
+          <span>Mon</span><div class="gh-days" id="ghDays"></div>
+          <span>Sun</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PROJECTS ============ -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-label mono">// featured work</span>
+        <h2 class="sec-title">Things I'm <em>building.</em></h2>
+      </div>
+
+      <div class="proj-grid">
+        <!-- dashboard-style preview card -->
+        <article class="proj-card glass reveal span-7 tilt">
+          <div class="mock-window">
+            <div class="mock-bar"><i></i><i></i><i></i><span class="mono">network-security-lab — dashboard</span></div>
+            <div class="mock-body">
+              <div class="mock-side mono">eth0<br>lo<br>wlan0<br><b>sandbox</b></div>
+              <div class="mock-main">
+                <div class="mock-chart" aria-hidden="true">
+                  <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+                    <polyline points="0,70 30,55 60,62 90,40 120,48 150,30 180,38 210,22 240,30 270,14 300,20"
+                      fill="none" stroke="url(#g1)" stroke-width="2"/>
+                    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+                  </svg>
+                  <div class="mock-kpis">
+                    <span class="kpi mono">packets <b>12.4k</b></span>
+                    <span class="kpi mono">alerts <b>3</b></span>
+                    <span class="kpi mono">uptime <b>99.9%</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-top"><h3>Network Security Lab</h3><span class="chip dev mono">in development</span></div>
+            <p>A controlled virtual lab for TCP/IP, packet analysis, and intrusion detection — where I learn how networks fail.</p>
+            <div class="tags mono"><span>Linux</span><span>Wireshark</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="proj-card glass reveal delay-1 span-5 tilt">
+          <div class="mock-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen mono">
+              <span class="ph-row">🔐 auth.system</span>
+              <span class="ph-bar"><i style="--w:82%"></i></span>
+              <span class="ph-row sm">MFA ✓ RBAC ✓ rate-limit ✓</span>
+              <button class="ph-btn" type="button">Sign-in flow →</button>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-top"><h3>Secure Auth System</h3><span class="chip dev mono">in development</span></div>
+            <p>Password hashing, sessions, MFA and RBAC done the right way — built as a reference-grade implementation.</p>
+            <div class="tags mono"><span>Node.js</span><span>JWT/OAuth</span><span>MFA</span></div>
+          </div>
+        </article>
+
+        <article class="proj-card glass reveal span-4 tilt">
+          <div class="proj-icon">🚩</div>
+          <div class="proj-info">
+            <div class="proj-top"><h3>CTF & Research</h3><span class="chip active mono">active</span></div>
+            <p>Ongoing writeups, experiments and challenges across web, forensics and crypto.</p>
+            <div class="tags mono"><span>CTF</span><span>Linux</span><span>Forensics</span></div>
+          </div>
+        </article>
+
+        <article class="proj-card glass reveal delay-1 span-4 tilt">
+          <div class="proj-icon">🤖</div>
+          <div class="proj-info">
+            <div class="proj-top"><h3>AI Security Agent</h3><span class="chip research mono">research</span></div>
+            <p>LLM-assisted log triage and alert summarization for defensive workflows.</p>
+            <div class="tags mono"><span>LLM</span><span>RAG</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="proj-card glass reveal delay-2 span-4 tilt">
+          <div class="proj-icon">🛡️</div>
+          <div class="proj-info">
+            <div class="proj-top"><h3>Mini SIEM</h3><span class="chip planned mono">planned</span></div>
+            <p>Log collection → detection → alerting. A home-lab SOC in the making.</p>
+            <div class="tags mono"><span>OpenSearch</span><span>Python</span><span>Linux</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENTO SKILLS ============ -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-label mono">// arsenal</span>
+        <h2 class="sec-title">Tech <em>Bento.</em></h2>
+      </div>
+
+      <div class="bento">
+        <div class="bento-item glass reveal b-lang">
+          <span class="b-label mono">languages</span>
+          <div class="cloud" id="langCloud">
+            <span class="c-xl">Python</span><span class="c-lg">JavaScript</span><span class="c-md">C/C++</span>
+            <span class="c-md">HTML</span><span class="c-sm">CSS</span><span class="c-sm">Bash</span>
+          </div>
+        </div>
+
+        <div class="bento-item glass reveal delay-1 b-sys">
+          <span class="b-label mono">systems</span>
+          <div class="icon-grid">
+            <span class="glow-icon" title="Linux">⬢<small>Linux</small></span>
+            <span class="glow-icon" title="Docker">🐳<small>Docker</small></span>
+            <span class="glow-icon" title="VMware">▣<small>VMware</small></span>
+            <span class="glow-icon" title="Windows">⊞<small>Windows</small></span>
+          </div>
+        </div>
+
+        <div class="bento-item glass reveal delay-1 b-net">
+          <span class="b-label mono">networking</span>
+          <div class="net-viz" aria-hidden="true">
+            <svg viewBox="0 0 200 120">
+              <circle cx="100" cy="60" r="8" class="node core"/>
+              <circle cx="30" cy="25" r="5" class="node"/><circle cx="170" cy="25" r="5" class="node"/>
+              <circle cx="30" cy="95" r="5" class="node"/><circle cx="170" cy="95" r="5" class="node"/>
+              <path d="M100 60L30 25M100 60L170 25M100 60L30 95M100 60L170 95" class="edge"/>
+              <circle cx="100" cy="60" r="16" class="ring"/><circle cx="100" cy="60" r="28" class="ring r2"/>
+            </svg>
+            <span class="mono net-caption">TCP/IP · DNS · HTTP/S · Wireshark</span>
+          </div>
+        </div>
+
+        <div class="bento-item glass reveal delay-2 b-ai">
+          <span class="b-label mono">ai</span>
+          <div class="cloud small">
+            <span class="c-lg">LLMs</span><span class="c-md">RAG</span><span class="c-md">Agents</span>
+            <span class="c-sm">Local AI</span><span class="c-sm">APIs</span>
+          </div>
+        </div>
+
+        <div class="bento-item glass reveal delay-2 b-soft">
+          <span class="b-label mono">soft skills</span>
+          <div class="chips-col">
+            <span class="soft-chip">Self-taught persistence</span>
+            <span class="soft-chip">Hands-on debugging</span>
+            <span class="soft-chip">Documentation habits</span>
+          </div>
+        </div>
+
+        <div class="bento-item glass reveal delay-3 b-tools">
+          <span class="b-label mono">tools</span>
+          <div class="tool-row mono">
+            <span>Git</span><i>/</i><span>GitHub</span><i>/</i><span>VS Code</span><i>/</i><span>Wireshark</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF OF WORK ============ -->
+  <section class="section" id="proof">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="sec-label mono">// proof of work</span>
+        <h2 class="sec-title">Problem → Solution → <em>Impact.</em></h2>
+      </div>
+
+      <div class="case-study glass reveal tilt">
+        <div class="case-step">
+          <span class="step-num mono">01</span>
+          <h3>Problem</h3>
+          <p>Home network devices had unknown exposure; no visibility into what traffic actually leaves the LAN.</p>
+        </div>
+        <div class="case-arrow" aria-hidden="true">→</div>
+        <div class="case-step">
+          <span class="step-num mono">02</span>
+          <h3>Solution</h3>
+          <p>Built a segmented virtual lab: pfSense firewall, mirrored traffic to Wireshark, scripted anomaly checks in Python.</p>
+        </div>
+        <div class="case-arrow" aria-hidden="true">→</div>
+        <div class="case-step accent">
+          <span class="step-num mono">03</span>
+          <h3>Impact</h3>
+          <p>Mapped every listening service, killed default creds, documented a repeatable hardening checklist now used across my VMs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT TERMINAL ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-copy reveal">
+          <span class="sec-label mono">// ping me</span>
+          <h2 class="sec-title">Let's build something <em>worth securing.</em></h2>
+          <p class="hero-sub">Projects, collaboration, research, or a good technical argument — my inbox is open.</p>
+          <div class="socials">
+            <a class="btn btn-primary magnetic" href="mailto:hello@petrabd.com">Email me</a>
+            <a class="btn btn-ghost magnetic" href="https://github.com/jubayertahsin" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn btn-ghost magnetic" href="https://linkedin.com/in/jubayertahsin" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <form class="terminal form-term reveal delay-1" id="pingForm" autocomplete="off">
+          <div class="term-bar">
+            <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+            <span class="term-title mono">ping_jubayer — zsh</span>
+          </div>
+          <div class="form-lines mono">
+            <label>$ who_are_you
+              <input type="text" name="name" placeholder="your_name" required>
+            </label>
+            <label>$ your_email
+              <input type="email" name="email" placeholder="you@domain.dev" required>
+            </label>
+            <label>$ message
+              <textarea name="message" rows="3" placeholder="let's build…" required></textarea>
+            </label>
+            <button class="btn btn-primary submit-btn" type="submit"><span class="mono">$ send --now ⏎</span></button>
+            <output class="term-resp mono" id="termResp" aria-live="polite"></output>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mono">
+    <span>© 2026 jubayer tahsin</span>
+    <span>dhaka · bangladesh</span>
+    <span>built with vanilla everything</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
